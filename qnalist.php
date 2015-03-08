@@ -3,7 +3,7 @@ $conn=mysql_connect("localhost","root","apmsetup") or die(mysql_error());
 mysql_select_db("skinboard",$conn);
 mysql_query("set names 'utf8'");
 
-$result=mysql_query("select * from qnaboard where qnanumber=1;",$conn)or die(mysql_error());
+$result=mysql_query("select * from qnaboard",$conn)or die(mysql_error());
 ?>
 
 <html>
@@ -23,7 +23,7 @@ $result=mysql_query("select * from qnaboard where qnanumber=1;",$conn)or die(mys
 		while($row=mysql_fetch_array($result)){
 			echo"
 			<tr>
-				<td>$row[qnanumber]</td>
+				<a href='../skinboard/qnalistdetail.php?id=$row[qnanumber]'><td>$row[qnanumber]</td></a>
 				<td>$row[qnatitle]</td>
 				<td>$row[qnadate]</td>
 				
