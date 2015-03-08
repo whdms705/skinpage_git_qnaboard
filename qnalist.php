@@ -23,7 +23,7 @@ $result=mysql_query("select * from qnaboard",$conn)or die(mysql_error());
 		while($row=mysql_fetch_array($result)){
 			echo"
 			<tr>
-				<a href='../skinboard/qnalistdetail.php?id=$row[qnanumber]'><td>$row[qnanumber]</td></a>
+				<td><a href='../skinboard/qnalistdetail.php?id=$row[qnanumber]'>$row[qnanumber]</a></td>
 				<td>$row[qnatitle]</td>
 				<td>$row[qnadate]</td>
 				
