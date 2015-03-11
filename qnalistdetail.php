@@ -9,7 +9,7 @@
 
 
 		<center>
-			<table border="3">
+			<table border="1">
 				<?
 
 				$qnanumber=$_GET['id'];
@@ -32,12 +32,21 @@
 
 				<td class='posttext'>$row[qnacontent]</td>
 
+			    </tr>
+
+			    <tr>
+
+				<td ><a href='modify.php?id=$row[qnanumber]'>수정</a></td>
+
 			    </tr>";
 
 			}
+
 			?>
+
 		</table>
 	</center>
+
 
 
 </form>

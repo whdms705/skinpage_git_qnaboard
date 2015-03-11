@@ -11,7 +11,7 @@ echo $posttext;
 
 $insert=mysql_query("insert into qnaboard(qnatitle,qnacontent)
 
-	values('$posttitle','posttext')",$conn) or die(mysql_error());
+	values('$posttitle','$posttext')",$conn) or die(mysql_error());
 
 
 
