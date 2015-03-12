@@ -34,5 +34,6 @@ $result=mysql_query("select * from qnaboard",$conn)or die(mysql_error());
 		?>
 	</table>
 	</center>
+	<button><a href="qnawrite.php">글쓰기</a></button>
 </body>
 </html>

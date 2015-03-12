@@ -21,6 +21,7 @@ mysql_query("update qnaboard set qnatitle='".$modifyposttitle."' , qnacontent='"
 
 
 
+
 ?>
 <html>
 <head>

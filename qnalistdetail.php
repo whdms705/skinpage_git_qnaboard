@@ -1,5 +1,9 @@
 <html>
 <head>
+<style type="text/css">
+	
+	
+</style>
 	<meta charset="utf-8">
 	<title>Q & A detail_list</title>
 	<link rel="stylesheet" type="text/css" href="qna.css">
@@ -36,9 +40,13 @@
 
 			    <tr>
 
-				<td ><a href='modify.php?id=$row[qnanumber]'>수정</a></td>
+				<td ><a href='modify.php?id=$row[qnanumber]'><div>수정</div></a>
+				<a href='qnalist.php'><div style='text-align:right'>돌아가기</div></a></td>
+				
 
-			    </tr>";
+			    </tr>
+
+			    ";
 
 			}
 
